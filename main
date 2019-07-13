@@ -1,0 +1,20 @@
+ # Enter your code here. Read input from STDIN. Print output to STDOUT
+import calendar
+
+month, day, year = map(int,input().split())
+if calendar.weekday(year, month, day) == 0:
+    today = "MONDAY"
+elif calendar.weekday(year, month, day) == 1:
+    today = "TUESDAY"
+elif calendar.weekday(year, month, day) == 2:
+    today = "WEDNESDAY"
+elif calendar.weekday(year, month, day) == 3:
+    today = "THURSDAY"
+elif calendar.weekday(year, month, day) == 4:
+    today = "FRIDAY"
+elif calendar.weekday(year, month, day) == 5:
+    today = "SATURDAY"
+elif calendar.weekday(year, month, day) == 6:
+    today = "SUNDAY"
+
+print(today)
